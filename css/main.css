@@ -3,11 +3,14 @@
 	padding: 0;
 }
 
+html {
+	background-image: url(../images/noise.jpg);
+}
+
 body {
 	font-family: Arial;
 	font-size: 16px;
 	line-height: 24px;
-	background-image: url(../images/noise.jpg);
 }
 
 .clear {
@@ -16,6 +19,7 @@ body {
 
 #page-wrap  {
 	width: 1000px;
+	padding: 0 25px;
 	margin: 40px auto 75px auto;
 	color: #222222;
 }
