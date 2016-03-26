@@ -1,0 +1,172 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial;
+	font-size: 16px;
+	line-height: 24px;
+	background-image: url(../images/noise.jpg);
+}
+
+.clear {
+	clear: both;
+}
+
+#page-wrap  {
+	width: 1000px;
+	margin: 40px auto 75px auto;
+	color: #222222;
+}
+
+h1 {
+	margin: 0 0 16px 0;
+	padding: 20px 0 16px 0;
+	font-size: 40px;
+	font-weight: bold;
+	letter-spacing: -2px;
+	border-bottom: 1px solid #999999;
+}
+
+p {
+	margin: 0 0 16px 0;
+}
+
+a, a:visited {
+	color: #222222;
+	text-decoration: none;
+	border-bottom: 1px dotted #999999;
+}
+
+a:hover {
+	color: #aaaaaa;
+	border-bottom: 1px dotted #aaaaaa;
+}
+
+ul {
+	margin: 0 0 32px 17px;
+}
+
+.profile {
+	float: right;
+	margin: 40px 0 0 0;
+}
+
+.print {
+	display: none;
+	visibility: hidden;
+}
+
+.objective {
+	width: 500px;
+	text-align: justify;
+	float: left;
+}
+
+.objective p {
+	width: 600px;
+	font-style: italic;
+	color: #555555;
+}
+
+dt {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: right;
+	padding: 0 26px 0 0;
+	width: 200px;
+	float: left;
+	height: 100px;
+	border-right: 1px solid #555555;
+}
+
+dd {
+	width: 700px;
+	float: left;
+	margin-left: 25px;
+}
+
+h2 {
+	font-size: 20px;
+	margin: 0 0 6px 0;
+	position: relative;
+}
+
+h2 span {
+	margin-left: 25px;
+	font-style: italic;
+	font-size: 16px;
+	color: #555555;
+	font-weight: normal;
+}
+
+dd.clear {
+	float: none;
+	margin: 0;
+	height: 25px;
+}
+
+td {
+	text-align: center;
+}
+
+.languages {
+	float: right;
+}
+
+.spanish {
+	width: 30px;
+	height: 20px;
+	margin: 0 5px;
+	background-image: url(../images/spanish.png);
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+.english {
+	width: 30px;
+	height: 20px;
+	background-image: url(../images/english.png);
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+.link {
+	color: #333333;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+.link:hover {
+	color: #aaaaaa;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+.empty {
+	color: #cccccc;
+}
+
+.filled {
+	color: #333333;
+}
+
+.tag {
+	display: inline-block;
+	font-size: 13px;
+	padding: 2px 4px;
+	margin: 5px 2px;
+	background-color: #eeeeee;
+	border: 1px solid #dddddd !important;
+	border-radius: 3px;
+}
+
+.tag:hover {
+	border: 1px solid #aaaaaa;
+}
