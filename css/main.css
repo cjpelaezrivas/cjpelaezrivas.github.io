@@ -13,10 +13,6 @@ body {
 	line-height: 24px;
 }
 
-.clear {
-	clear: both;
-}
-
 #page-wrap  {
 	width: 1000px;
 	padding: 0 25px;
@@ -52,7 +48,12 @@ ul {
 	margin: 0 0 32px 17px;
 }
 
+.clear {
+	clear: both;
+}
+
 .profile {
+	display: none;
 	float: right;
 	margin: 40px 0 0 0;
 }
@@ -63,6 +64,7 @@ ul {
 }
 
 .objective {
+	display: none;
 	width: 500px;
 	text-align: justify;
 	float: left;
