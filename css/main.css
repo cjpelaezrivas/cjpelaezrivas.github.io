@@ -53,7 +53,6 @@ ul {
 }
 
 .profile {
-	display: none;
 	float: right;
 	margin: 40px 0 0 0;
 }
@@ -64,7 +63,6 @@ ul {
 }
 
 .objective {
-	display: none;
 	width: 500px;
 	text-align: justify;
 	float: left;
@@ -81,17 +79,19 @@ dt {
 	font-weight: bold;
 	font-size: 18px;
 	text-align: right;
-	padding: 0 26px 0 0;
 	width: 200px;
 	float: left;
-	height: 100px;
+	margin-right: -1px;
+	padding: 0 25px 0 0;
 	border-right: 1px solid #555555;
+	height: 75px;
 }
 
 dd {
 	width: 700px;
 	float: left;
-	margin-left: 25px;
+	padding: 0 0 0 25px;
+	border-left: 1px solid #555555;
 }
 
 h2 {
@@ -112,6 +112,12 @@ dd.clear {
 	float: none;
 	margin: 0;
 	height: 25px;
+	padding: 0;
+	border-left: none;
+}
+
+.separator {
+	height: 15px;
 }
 
 td {

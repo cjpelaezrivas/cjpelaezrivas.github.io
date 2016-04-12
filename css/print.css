@@ -18,17 +18,20 @@ a, a:visited {
 }
 
 .print {
-	display: block;
+	display: inline;
 	visibility: visible;
 }
 
 .link {
-	display: block;
 	color: #333333;
 	text-decoration: none;
 	border-bottom: none;
 }
 
+.links {
+	display: inline;
+}
+
 .link:after {
-  content: " " attr(title) ": " attr(href);
+  content: " " attr(name) ": " attr(href);
 }
