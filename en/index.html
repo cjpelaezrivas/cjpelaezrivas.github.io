@@ -18,13 +18,55 @@
 	<link rel="stylesheet" type="text/css" href="../css/hint.base.min.css">
 
 	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		function calculateTime(d1, d2) {
+			var d1S = d1.split('/');
+			d1 = Date.UTC(d1S[1], d1S[0]-1, '01');
 
-		ga('create', 'UA-74491738-3', 'auto');
-		ga('send', 'pageview');
+
+			if(d2 === null) {
+				d2 = new Date();
+			} else {
+				var d2S = d2.split('/');
+				d2 = Date.UTC(d2S[1], d2S[0]-1, '01');
+			}
+
+			var dif = d2 - d1;
+			dif /= 1000 * 60 * 60 * 24 * 365;
+
+			var years = Math.floor(dif);
+			var months =  Math.floor((dif - years) * 12);
+
+			var result = '';
+			if(years > 0) {
+				result += years + ' year';
+			}
+
+			if(years > 1) {
+				result += 's';
+			}
+
+			if(months > 0) {
+				if(years > 0) {
+					result += ' and ';
+				}
+				result += months + ' month';
+			}
+
+			if(months > 1) {
+				result += 's';
+			}
+
+			return result;
+		}
+	</script>
+	<script>
+		// (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		// 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		// 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		// })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		// ga('create', 'UA-74491738-3', 'auto');
+		// ga('send', 'pageview');
 	</script>
 </head>
 
@@ -55,7 +97,9 @@
 			<p>
 				<strong><i class="fa fa-map-marker fa-fw"></i> Current location: </strong><a href="https://www.google.es/maps/place/Málaga, España/">Málaga, Spain</a><br />
 				<strong><i class="fa fa-envelope fa-fw"></i> Email: </strong> <a href="mailto:cjpelaezrivas@gmail.com" target="_self">cjpelaezrivas@gmail.com</a> <br />
-				<strong><i class="fa fa-phone fa-fw"></i> Phone number: </strong><a href="mailto:cjpelaezrivas@gmail.com?subject=Request for phone number&body=Greetings, I would like to ask you for some more information. Please, contact me." target="_self">Request for phone number</a><br />
+				<span class="normal">
+					<strong><i class="fa fa-phone fa-fw"></i> Phone number: </strong><a href="mailto:cjpelaezrivas@gmail.com?subject=Request for phone number" target="_self">Request for phone number</a>
+				</span>
 			</p>
 		</div>
 		<div>
@@ -98,7 +142,7 @@
 
 			<dt>Experience</dt>
 			<dd>
-				<h2><a href="http://www.querry.com/">Querry, S.A.</a> <span>March 2014 - Present</span></h2>
+				<h2><a href="http://www.querry.com/">Querry, S.A.</a> <span>March 2014 - Present (<script>document.write(calculateTime('03/2014', null))</script>)</span></h2>
 				<p>
 					Málaga, Spain. <br />
 					<i>Custom oriented cloud applications development with <a href="https://vaadin.com/home">Vaadin</a> for companies.</i>
@@ -115,34 +159,34 @@
 							<b>Spanish</b> <br />
 							Native proficiency <br />
 							<br />
-							<i class="fa fa-circle filled"></i>
-							<i class="fa fa-circle filled"></i>
-							<i class="fa fa-circle filled"></i>
-							<i class="fa fa-circle filled"></i>
-							<i class="fa fa-circle filled"></i>
-							<i class="fa fa-circle filled"></i>
+							<i class="fa fa-circle"></i>
+							<i class="fa fa-circle"></i>
+							<i class="fa fa-circle"></i>
+							<i class="fa fa-circle"></i>
+							<i class="fa fa-circle"></i>
+							<i class="fa fa-circle"></i>
 						</td>
 						<td>
 							<b>English</b> <br />
 							Professional working proficiency <br />
 							Level B2 (<a href="https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages">CEFR</a>) <br />
-							<i class="fa fa-circle filled"></i>
-							<i class="fa fa-circle filled"></i>
-							<i class="fa fa-circle filled"></i>
-							<i class="fa fa-circle filled"></i>
-							<i class="fa fa-circle empty"></i>
-							<i class="fa fa-circle empty"></i>
+							<i class="fa fa-circle"></i>
+							<i class="fa fa-circle"></i>
+							<i class="fa fa-circle"></i>
+							<i class="fa fa-circle"></i>
+							<i class="fa fa-circle-thin"></i>
+							<i class="fa fa-circle-thin"></i>
 						</td>
 						<td>
 							<b>German</b> <br />
 							Basic proficiency <br />
 							Level A1 (<a href="https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages">CEFR</a>) <br />
-							<i class="fa fa-circle filled"></i>
-							<i class="fa fa-circle empty"></i>
-							<i class="fa fa-circle empty"></i>
-							<i class="fa fa-circle empty"></i>
-							<i class="fa fa-circle empty"></i>
-							<i class="fa fa-circle empty"></i>
+							<i class="fa fa-circle"></i>
+							<i class="fa fa-circle-thin"></i>
+							<i class="fa fa-circle-thin"></i>
+							<i class="fa fa-circle-thin"></i>
+							<i class="fa fa-circle-thin"></i>
+							<i class="fa fa-circle-thin"></i>
 						</td>
 					</tr>
 				</table>
@@ -180,7 +224,7 @@
 
 				<dt>Professional references</dt>
 				<dd>
-					<a href="mailto:cjpelaezrivas@gmail.com?subject=Request for professional references&body=Greetings, I would like to ask you for some more information. Please, contact me." target="_self">Request for professional references</a>
+					<a href="mailto:cjpelaezrivas@gmail.com?subject=Request for professional references" target="_self">Request for professional references</a>
 				</dd>
 
 				<dd class="clear"></dd>
@@ -192,7 +236,7 @@
 		<br />
 		<div class="objective">
 			<p>
-				<i class="fa fa-clock-o"></i> Last update: March 2016
+				<i class="fa fa-clock-o"></i> Last update: June 2016
 			</p>
 		</div>
 	</div>
