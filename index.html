@@ -22,7 +22,6 @@
 			var d1S = d1.split('/');
 			d1 = Date.UTC(d1S[1], d1S[0]-1, '01');
 
-
 			if(d2 === null) {
 				d2 = new Date();
 			} else {
@@ -59,6 +58,10 @@
 			return result;
 		}
 	</script>
+	<script type="text/javascript">
+		document.onselectstart = function() {return false;}
+		document.onmousedown = function() {return false;}
+	</script>
 	<script  type="text/javascript">
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -94,17 +97,21 @@
 		<div>
 			<h1 class="fn">Carlos J. Peláez Rivas</h1>
 			<p>
-				<strong><i class="fa fa-map-marker fa-fw"></i> Ubicación actual: </strong><a href="https://www.google.es/maps/place/Málaga, España/">Málaga, España</a> <br />
-				<strong><i class="fa fa-envelope fa-fw"></i> Email: </strong> <a href="mailto:cjpelaezrivas@gmail.com" target="_self">cjpelaezrivas@gmail.com</a> <br />
+				<strong><i class="fa fa-map-marker fa-fw"></i> Ubicación actual: </strong><a href="https://www.google.es/maps/place/Málaga, España/">Málaga, España</a> <br/>
+				<strong><i class="fa fa-envelope fa-fw"></i> Email: </strong> <a href="mailto:cjpelaezrivas@gmail.com" target="_self">cjpelaezrivas@gmail.com</a> <br/>
 				<span class="normal">
 					<strong><i class="fa fa-phone fa-fw"></i> Teléfono: </strong><a href="mailto:cjpelaezrivas@gmail.com?subject=Solicitar número de teléfono" target="_self">Solicitar teléfono de contacto</a>
 				</span>
 			</p>
 		</div>
 		<div>
-			<strong>Enlaces:</strong> <br />
+			<strong>Enlaces:</strong> <br/>
 			<div class="hint--bottom-right" data-hint="Perfil de LinkedIn">
 				<a class="link" href="https://www.linkedin.com/in/cjpelaezrivas" name="LinkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a>
+			</div>
+			<span class="print"><br/></span>
+			<div class="hint--bottom-right" data-hint="Perfil de GitHub">
+				<a class="link" href="https://github.com/cjpelaezrivas" name="GitHub"><i class="fa fa-github-square fa-2x"></i></a>
 			</div>
 			<span class="print"><br/></span>
 			<div class="hint--bottom-right" data-hint="Blog personal">
@@ -112,7 +119,7 @@
 			</div>
 		</div>
 
-		<br />
+		<br/>
 
 		<div class="objective" style="display: none;">
 			<p>
@@ -123,28 +130,28 @@
 		<dl>
 			<dd class="clear"></dd>
 
-			<dt>Formación académica</dt>
+			<dt>Experiencia laboral</dt>
 			<dd>
-				<h2>Máster en Ingeniería Informática <span>2015 - Actualmente</span></h2>
+				<h2><a href="http://www.querry.com/">Querry, S.A.</a> <span>Marzo, 2014 - Actualmente (<script>document.write(calculateTime('03/2014', null))</script>)</span></h2>
 				<p>
-					Escuela Técnica Superior de Ingeniería Informática. <br />
-					Universidad de Málaga, España.
-				</p>
-				<h2>Graduado en Ingeniería Informática <span>2010 - 2015</span></h2>
-				<p>
-					Escuela Técnica Superior de Ingeniería Informática. <br />
-					Universidad de Málaga, España.
+					Málaga, España. <br/>
+					<i>Desarrollo de aplicaciones a medida orientadas a la nube para empresas usando <a href="https://vaadin.com/home">Vaadin</a>.</i>
 				</p>
 			</dd>
 
 			<dd class="clear"></dd>
 
-			<dt>Experiencia laboral</dt>
+			<dt>Formación académica</dt>
 			<dd>
-				<h2><a href="http://www.querry.com/">Querry, S.A.</a> <span>Marzo, 2014 - Actualmente (<script>document.write(calculateTime('03/2014', null))</script>)</span></h2>
+				<h2>Máster en Ingeniería Informática <span>2015 - Actualmente</span></h2>
 				<p>
-					Málaga, España. <br />
-					<i>Desarrollo de aplicaciones a medida orientadas a la nube para empresas usando el framework de desarrollo web <a href="https://vaadin.com/home">Vaadin</a>.</i>
+					Escuela Técnica Superior de Ingeniería Informática. <br/>
+					Universidad de Málaga, España.
+				</p>
+				<h2>Graduado en Ingeniería Informática <span>2010 - 2015</span></h2>
+				<p>
+					Escuela Técnica Superior de Ingeniería Informática. <br/>
+					Universidad de Málaga, España.
 				</p>
 			</dd>
 
@@ -155,9 +162,9 @@
 				<table width="100%">
 					<tr>
 						<td>
-							<b>Español</b> <br />
-							Competencia nativa <br />
-							<br />
+							<b>Español</b> <br/>
+							Competencia nativa <br/>
+							<br/>
 							<i class="fa fa-circle"></i>
 							<i class="fa fa-circle"></i>
 							<i class="fa fa-circle"></i>
@@ -166,9 +173,9 @@
 							<i class="fa fa-circle"></i>
 						</td>
 						<td>
-							<b>Inglés</b> <br />
-							Competencia media profesional <br />
-							Nivel B2 (<a href="https://es.wikipedia.org/wiki/Marco_Com%C3%BAn_Europeo_de_Referencia_para_las_lenguas">MCER</a>) <br />
+							<b>Inglés</b> <br/>
+							Competencia media profesional <br/>
+							Nivel B2 (<a href="https://es.wikipedia.org/wiki/Marco_Com%C3%BAn_Europeo_de_Referencia_para_las_lenguas">MCER</a>) <br/>
 							<i class="fa fa-circle"></i>
 							<i class="fa fa-circle"></i>
 							<i class="fa fa-circle"></i>
@@ -177,9 +184,9 @@
 							<i class="fa fa-circle-thin"></i>
 						</td>
 						<td>
-							<b>Alemán</b> <br />
-							Competencia básica <br />
-							Nivel A1 (<a href="https://es.wikipedia.org/wiki/Marco_Com%C3%BAn_Europeo_de_Referencia_para_las_lenguas">MCER</a>) <br />
+							<b>Alemán</b> <br/>
+							Competencia básica <br/>
+							Nivel A1 (<a href="https://es.wikipedia.org/wiki/Marco_Com%C3%BAn_Europeo_de_Referencia_para_las_lenguas">MCER</a>) <br/>
 							<i class="fa fa-circle"></i>
 							<i class="fa fa-circle-thin"></i>
 							<i class="fa fa-circle-thin"></i>
@@ -196,26 +203,41 @@
 
 			<dt>Habilidades</dt>
 			<dd>
-				Experiencia con: <br />
-				<a class="tag" href="https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)">Java</a>
+				Experiencia con: <br/>
+				<a class="tag" href="https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)"><b>Java</b></a>
+				<a class="tag" href="https://en.wikipedia.org/wiki/Vaadin"><b>Vaadin</b></a>
+				<a class="tag" href="https://es.wikipedia.org/wiki/Eclipse_(software)"><b>Eclipse</b></a>
+				<a class="tag" href="https://es.wikipedia.org/wiki/Git"><b>GIT</b></a>
+				<a class="tag" href="https://es.wikipedia.org/wiki/MySQL"><b>MySQL</b></a>
+				<a class="tag" href="https://es.wikipedia.org/wiki/Scrum"><b>Scrum</b></a>
 				<a class="tag" href="https://es.wikipedia.org/wiki/Java_EE">Java EE</a>
 				<a class="tag" href="https://es.wikipedia.org/wiki/Hibernate">Hibernate</a>
-				<a class="tag" href="https://en.wikipedia.org/wiki/Vaadin">Vaadin</a>
+				<a class="tag" href="https://es.wikipedia.org/wiki/HTML5">HTML5</a>
+				<a class="tag" href="https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada">CSS</a>
+				<a class="tag" href="https://es.wikipedia.org/wiki/Tomcat">Apache Tomcat</a>
+				<a class="tag"  href="https://es.wikipedia.org/wiki/JasperReports">Jasper Report</a>
+				<a class="tag" href="https://es.wikipedia.org/wiki/Microsoft_SQL_Server">Microsoft SQL Server</a>
+				<a class="tag" href="https://es.wikipedia.org/wiki/NetBeans">NetBeans</a>
+				<a class="tag" href="https://es.wikipedia.org/wiki/GitHub">GitHub</a>
+				<a class="tag" href="https://es.wikipedia.org/wiki/Bitbucket">BitBucket</a>
+				<a class="tag" href="https://en.wikipedia.org/wiki/Teamwork.com">Teamwork</a>
+				<a class="tag"  href="https://es.wikipedia.org/wiki/Desarrollo_en_cascada">Desarrollo en cascada</a>
+
+				<div class="separator"></div>
+
+				Conocimientos básicos de: <br/>
+				<a class="tag" href="https://es.wikipedia.org/wiki/JavaFX">JavaFX</a>
+				<a class="tag" href="https://es.wikipedia.org/wiki/JUnit">JUnit</a>
+				<a class="tag" href="https://es.wikipedia.org/wiki/JavaScript">JavaScript</a>
+				<a class="tag" href="https://es.wikipedia.org/wiki/MongoDB">MongoDB</a>
+				<a class="tag" href="https://es.wikipedia.org/wiki/Hadoop">Hadoop</a>
+				<a class="tag" href="https://es.wikipedia.org/wiki/Apache_HBase">Apache Hbase</a>
+				<a class="tag" href="https://es.wikipedia.org/wiki/Apache_Hive">Apache Hive</a>
+				<a class="tag" href="https://en.wikipedia.org/wiki/Apache_Spark">Apache Spark</a>
 				<a class="tag" href="https://es.wikipedia.org/wiki/JavaServer_Pages">JSP</a>
 				<a class="tag" href="https://es.wikipedia.org/wiki/JavaServer_Faces">JSF</a>
 				<a class="tag" href="https://es.wikipedia.org/wiki/PrimeFaces">PrimeFaces</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/HTML">HTML</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada">CSS</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/JavaScript">JavaScript</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/Tomcat">Apache Tomcat</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/Git">GIT</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/MySQL">MySQL</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/Microsoft_SQL_Server">Microsoft SQL Server</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/Eclipse_(software)">Eclipse</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/NetBeans">NetBeans</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/Scrum">Scrum</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/Desarrollo_en_cascada">Desarrollo en cascada</a>
-				<div class="separator"></div>
+				<a class="tag" href="https://es.wikipedia.org/wiki/MATLAB">Matlab</a>
 			</dd>
 
 			<div class="normal">
@@ -232,10 +254,10 @@
 
 		<div class="clear"></div>
 
-		<br />
+		<br/>
 		<div class="objective">
 			<p>
-				<i class="fa fa-clock-o"></i> Última actualización: Junio de 2016
+				<i class="fa fa-clock-o"></i> Última actualización: Noviembre de 2016
 			</p>
 		</div>
 	</div>
