@@ -22,16 +22,25 @@ a, a:visited {
 	visibility: visible;
 }
 
+.links {
+	display: inline;
+}
+
 .link {
 	color: #333333;
 	text-decoration: none;
 	border-bottom: none;
 }
 
-.links {
-	display: inline;
-}
-
 .link:after {
   content: " " attr(name) ": " attr(href);
+}
+
+.linkB:after {
+	content: " (" attr(href) ")";
+
+	font-style: italic;
+	font-size: 16px;
+	color: #555555;
+	font-weight: normal;
 }
