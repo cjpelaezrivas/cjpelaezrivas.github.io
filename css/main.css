@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Regular.woff') format('woff'),
+     	 url('../fonts/OpenSans-Regular.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,8 +16,9 @@ html {
 }
 
 body {
-	font-family: Helvetica, Arial;
+	font-family: 'OpenSans', Helvetica;
 	font-size: 16px;
+	color: #222222;
 	line-height: 24px;
 }
 
@@ -17,7 +26,6 @@ body {
 	width: 1000px;
 	padding: 0 25px;
 	margin: 40px auto 75px auto;
-	color: #222222;
 }
 
 h1 {
