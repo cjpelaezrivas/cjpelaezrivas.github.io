@@ -37,6 +37,12 @@ h1 {
 	border-bottom: 1px solid #999999;
 }
 
+h2 {
+	font-size: 20px;
+	margin: 0 0 6px 0;
+	position: relative;
+}
+
 p {
 	margin: 0 0 16px 0;
 }
@@ -54,32 +60,6 @@ a:hover {
 
 ul {
 	margin: 0 0 32px 17px;
-}
-
-.clear {
-	clear: both;
-}
-
-.profile {
-	float: right;
-	margin: 40px 0 0 0;
-}
-
-.print {
-	display: none;
-	visibility: hidden;
-}
-
-.objective {
-	width: 500px;
-	text-align: justify;
-	float: left;
-}
-
-.objective p {
-	width: 600px;
-	font-style: italic;
-	color: #555555;
 }
 
 dt {
@@ -102,26 +82,49 @@ dd {
 	border-left: 1px solid #555555;
 }
 
-h2 {
-	font-size: 20px;
-	margin: 0 0 6px 0;
-	position: relative;
-}
-
-h2 span {
-	margin-left: 20px;
-	font-style: italic;
-	font-size: 16px;
-	color: #555555;
-	font-weight: normal;
-}
-
 dd.clear {
 	float: none;
 	margin: 0;
 	height: 25px;
 	padding: 0;
 	border-left: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.print {
+	display: none;
+	visibility: hidden;
+}
+
+.profile {
+	float: right;
+	margin: 40px 0 0 0;
+}
+
+.objective {
+	width: 500px;
+	text-align: justify;
+	float: left;
+}
+
+.objective p {
+	width: 600px;
+	font-style: italic;
+	color: #555555;
+}
+
+.note {
+	font-style: italic;
+	font-size: 16px;
+	color: #555555;
+	font-weight: normal;
+}
+
+.margin {
+	margin-left: 20px;
 }
 
 .separator {
@@ -134,6 +137,7 @@ td {
 
 .languages {
 	float: right;
+	right: 100px;
 }
 
 .spanish {
