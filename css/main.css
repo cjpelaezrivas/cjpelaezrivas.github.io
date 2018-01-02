@@ -12,7 +12,8 @@
 }
 
 html {
-	background-image: url(../images/noise.jpg);
+	/*background-image: url(../images/noise.jpg);*/
+	background-color: #FDFDFD;
 }
 
 body {
