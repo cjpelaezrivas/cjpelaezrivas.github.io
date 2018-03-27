@@ -1,1 +1,138 @@
-This is a custom error page.
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>404 | Page not found</title>
+
+	<meta charset="UTF-8" />
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="author" content="Carlos J. Peláez Rivas" />
+	<meta name="description" content="Error 404 page - Resource not found" />
+	<meta name="keywords" content="carlos,jesús,jesus,peláez,pelaez,rivas,programación,programacion,coding,code,programming,ingeniero,ingeniería,ingenieria,engineer,engineering,universidad,university,málaga,malaga,uma,españa,spain" />
+
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+	<style type="text/css">
+		@font-face {
+			font-family: 'OpenSans';
+			src: url('../fonts/OpenSans-Regular.woff') format('woff'),
+			url('../fonts/OpenSans-Regular.ttf')  format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		article, aside, footer, header, nav, section {
+			display: block;
+		}
+
+		html, body {
+			display: table;
+			margin: 0;
+			padding: 0;
+
+			width: 100%;
+			height: 100%;
+			min-height: 100%;
+
+			color: #222222;
+			background-color: #FDFDFD;
+
+			text-align: center;
+			font-family: 'OpenSans', Helvetica;
+			font-size: 16px;
+			line-height: 24px;
+		}
+
+		.wrap{
+			display: table-cell;
+			margin-top: -150px;
+			padding: 0 30px;
+
+			vertical-align: middle;
+		}
+
+		h1{
+			font-size: 36px;
+			font-weight: bold;
+			line-height: 1.1;
+		}
+
+		.buttons {
+			margin: 25px 0;
+		}
+
+		.button, .button:visited {
+			margin: 0 25px;
+			padding: 15px 20px;
+
+			display: inline-block;
+			width: 120px;
+
+			background-color: #EEEEEE;
+			border: 1px solid #DDDDDD !important;
+			border-radius: 3px;
+
+			font-weight: bold;
+		}
+
+		.button:hover {
+			border: 1px solid #AAAAAA;
+		}
+
+		@media screen and (max-width: 500px) {
+			.button {
+				margin: 25px  25px;
+				display: block;
+				width: auto;
+			}
+		}
+
+		h1 small{
+			color: #CC0000;
+
+			font-size: 65%;
+			font-weight: 400;
+			line-height: 1;
+		}
+
+		footer{
+			position: fixed;
+			width: 100%;
+			height: 40px;
+			left: 0;
+			bottom: 0;
+		}
+
+		a, a:visited {
+			color: #222222;
+			text-decoration: none;
+			border-bottom: 1px dotted #999999;
+		}
+
+		a:hover {
+			color: #AAAAAA;
+			border-bottom: 1px dotted #AAAAAA;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrap">
+		<img style="width:100%; max-width:150px;" src="images/logo.png"/>
+		<h1>Page not found <small>Error 404</small></h1>
+		<p>
+			The page that you requested could not be found. Maybe it does not exits, it was deleted or it has not been created yet.<br>
+			In any case, you can go to the previous page you were in or go to the main page.
+		</p>
+
+		<div class="buttons">
+			<a class="button" href="javascript:history.back()"><i class="fa fa-undo fa-fw"></i>Back</a>
+			<a class="button" href="http://www.cjpelaezrivas.tk"><i class="fa fa-home fa-fw"></i>Main page</a>
+		</div>
+		<p>
+			<b>Contact:</b> <a href="mailto:cjpelaezrivas@gmail.com">cjpelaezrivas@gmail.com</a>
+		</p>
+	</div>
+</body>
+</html>

@@ -185,5 +185,7 @@ td {
 }
 
 .tag:hover {
-	border: 1px solid #aaaaaa;
+	color: #333333;
+	background-color: #fefefe;
+	border: 1px solid #aaaaaa !important;
 }
