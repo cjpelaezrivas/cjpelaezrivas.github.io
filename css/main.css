@@ -55,7 +55,7 @@ ul.custom_list li:before {
 	overflow: hidden;
 
 	padding: 0 25px;
-	margin: 50px auto;
+	margin: 25px auto;
 
 	line-height: 25px;
 }
@@ -232,9 +232,7 @@ ul.custom_list li:before {
 
 	#details .item .detail {
 		display: block;
-
-		padding-top: 15px;
-		padding-left: 0;
+		padding: 15px 0 15px 0;
 
 		border-top: solid 1px #999999;
 		border-left: none;
