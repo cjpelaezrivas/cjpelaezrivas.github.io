@@ -13,218 +13,190 @@
 	<link rel="icon" type="image/x-icon" href="images/favicon.ico"/>
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
 
-	<link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/hint.base.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
 
- 	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
 
- 	<!-- Global site tag (gtag.js) - Google Analytics -->
- 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74491738-3"></script>
- 	<script>
- 		window.dataLayer = window.dataLayer || [];
- 		function gtag(){dataLayer.push(arguments);}
- 		gtag('js', new Date());
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74491738-3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
- 		gtag('config', 'UA-74491738-3');
- 	</script>
+		gtag('config', 'UA-74491738-3');
+	</script>
 </head>
 
 <body>
 	<div id="page-wrap">
-		<div class="languages">
-			<table>
-				<tr>
-					<td>
-						<a href="index.html" target="_self"><div class="spanish"></div></a>
-					</td>
-					<td>
-						<a href="en/index.html" target="_self"><div class="english"></div></a>
-					</td>
-					<td>
-						<div class="normal">
-							<div class="hint--bottom-left" style="margin-left:20px;" data-hint="Descargar como PDF">
-								<a class="link" href="javascript:window.print()" name="Descargar como PDF"><i class="fa fa-print fa-lg"></i></a>
-							</div>
-						</div>
-					</td>
-				</tr>
-			</table>
-		</div>
-		<div>
-			<h1>Carlos J. Peláez Rivas</h1>
-			<p>
-				<b><i class="fa fa-map-marker fa-fw"></i> Ubicación actual: </b><a href="https://www.google.es/maps/place/Málaga, España/">Málaga, España</a> <br/>
-				<b><i class="fa fa-envelope fa-fw"></i> Email: </b> <a href="mailto:cjpelaezrivas@gmail.com" target="_self">cjpelaezrivas@gmail.com</a> <br/>
-				<span class="normal">
-					<b><i class="fa fa-phone fa-fw"></i> Teléfono: </b><a href="mailto:cjpelaezrivas@gmail.com?subject=Solicitar número de teléfono" target="_self">Solicitar teléfono de contacto</a>
-				</span>
-			</p>
-		</div>
-		<div>
-			<b>Enlaces:</b> <br/>
-			<div class="hint--bottom-right" data-hint="Perfil de LinkedIn">
-				<a class="link" href="https://www.linkedin.com/in/cjpelaezrivas" name="LinkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a>
+		<div id="languages" class="section no_print">
+			<div class="item hint--bottom-left" data-hint="Descargar como PDF" style="margin: -2px 0 0 15px;">
+				<a class="link" href="javascript:window.print()" name="Descargar como PDF"><i class="fa fa-print fa-lg"></i></a>
 			</div>
-			<span class="print"><br/></span>
-			<div class="hint--bottom-right" data-hint="Perfil de GitHub">
-				<a class="link" href="https://github.com/cjpelaezrivas" name="GitHub"><i class="fa fa-github-square fa-2x"></i></a>
+			<div class="item hint--bottom-left" data-hint="Change to English">
+				<a href="en/index.html" target="_self"><div class="english"></div></a>
 			</div>
-			<span class="print"><br/></span>
-			<span class="hint--bottom-right" data-hint="Blog personal">
-				<a class="link" href="http://www.prlazarus.tk/" name="Blog personal"><i class="fa fa-pencil-square fa-2x"></i></a>
+			<div class="item hint--bottom-left" data-hint="Cambiar a Español">
+				<a href="index.html" target="_self"><div class="spanish"></div></a>
+			</div>
+		</div>
+
+		<div id="name" class="section">
+			Carlos J. Peláez Rivas
+		</div>
+
+		<div id="information" class="section">
+			<b><i class="fa fa-map-marker fa-fw"></i> Ubicación actual: </b>
+			<a href="https://www.google.es/maps/place/Málaga, España/">Málaga, España</a> <br/>
+			<b><i class="fa fa-envelope fa-fw"></i> Email: </b>
+			<a href="mailto:cjpelaezrivas@gmail.com" target="_self">cjpelaezrivas@gmail.com</a> <br/>
+			<span class="no_print">
+				<b><i class="fa fa-phone fa-fw"></i> Teléfono: </b><a href="mailto:cjpelaezrivas@gmail.com?subject=Solicitar más información" target="_self">Solicitar teléfono de contacto</a>
 			</span>
 		</div>
 
-		<br/>
+		<div id="links" class="section">
+			<b>Enlaces de interés:</b> <br/>
+			<span class="hint--bottom-right" data-hint="Blog personal">
+				<a class="link" href="http://www.prlazarus.tk/" name="Blog personal"><i class="fa fa-pencil-square fa-2x"></i></a>
+			</span>
+			<span class="only_print"> <br/> </span>
+			<div class="hint--bottom-right" data-hint="Perfil de LinkedIn">
+				<a class="link" href="https://www.linkedin.com/in/cjpelaezrivas" name="LinkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a>
+			</div>
+			<span class="only_print"> <br/> </span>
+			<div class="hint--bottom-right" data-hint="Perfil de GitHub">
+				<a class="link" href="https://github.com/cjpelaezrivas" name="GitHub"><i class="fa fa-github-square fa-2x"></i></a>
+			</div>
+		</div>
 
-		<dl>
-			<dd class="clear"></dd>
-
-			<dt>Experiencia profesional</dt>
-			<dd>
-				<h2><a href="https://www.querry.com/">Querry, S.A.</a> <span class="note margin">Junio, 2014 - Actualmente (<script>document.write(calculateTime('06/2014', null, 'es'))</script>)</span></h2>
-				<p>
+		<div id="details" class="section">
+			<div class="item">
+				<h2>Experiencia profesional</h2>
+				<div class="detail">
+					<h3><a href="https://www.querry.com/">Querry, S.A.</a> <span class="mobile_view"><br></span> <span class="note date_information">Junio, 2014 - Actualmente (<script>document.write(calculateTime('06/2014', null, 'es'))</script>)</span></h3>
 					Málaga, España. <br/>
 					<i>Desarrollo de aplicaciones a medida orientadas a la nube para empresas usando <a href="https://vaadin.com/home">Vaadin</a>.</i>
-				</p>
-			</dd>
-
-			<dd class="clear"></dd>
-
-			<dt>Formación académica</dt>
-			<dd>
-				<h2>Máster en Ingeniería Informática <span class="note margin">2015 - Actualmente</span></h2>
-				<p>
-					Escuela Técnica Superior de Ingeniería Informática. <br/>
-					Universidad de Málaga, España.
-				</p>
-				<h2>Grado en Ingeniería Informática <span class="note margin">2010 - 2015</span></h2>
-				<p>
-					Escuela Técnica Superior de Ingeniería Informática. <br/>
-					Universidad de Málaga, España.
-				</p>
-			</dd>
-
-			<dd class="clear"></dd>
-
-			<dt>Proyectos personales</dt>
-			<dd>
-				<h2><a class="linkB" href="http://www.prlazarus.tk/">prlazarus.tk</a> </span> <span class="note margin">En activo desde 2012</span></h2>
-				<p>
-					<i>Blog personal sobre desarrollo de proyectos Software y tutoriales.</i>
-				</p>
-
-				<h2><a class="linkB" href="http://www.projectcreationfx.tk">Project Creation FX</a> <span class="note margin">En desarrollo desde 2015</span></h2>
-				<p>
-					<i>Motor de desarrollo de juegos 2D en Java usando tecnología JavaFX.</i>
-				</p>
-			</dd>
-
-			<dd class="clear"></dd>
-
-			<dt>Idiomas</dt>
-			<dd>
-				<table width="100%">
-					<tr>
-						<td>
-							<b>Español</b> <br/>
-							Competencia nativa <br/>
-							<br/>
-							<i class="fa fa-circle"></i>
-							<i class="fa fa-circle"></i>
-							<i class="fa fa-circle"></i>
-							<i class="fa fa-circle"></i>
-							<i class="fa fa-circle"></i>
-							<i class="fa fa-circle"></i>
-						</td>
-						<td>
-							<b>Inglés</b> <br/>
-							Competencia media profesional <br/>
-							Nivel B2 (<a href="https://es.wikipedia.org/wiki/Marco_Com%C3%BAn_Europeo_de_Referencia_para_las_lenguas">MCER</a>) <br/>
-							<i class="fa fa-circle"></i>
-							<i class="fa fa-circle"></i>
-							<i class="fa fa-circle"></i>
-							<i class="fa fa-circle"></i>
-							<i class="fa fa-circle-thin"></i>
-							<i class="fa fa-circle-thin"></i>
-						</td>
-						<td>
-							<b>Alemán</b> <br/>
-							Competencia básica <br/>
-							Nivel A1 (<a href="https://es.wikipedia.org/wiki/Marco_Com%C3%BAn_Europeo_de_Referencia_para_las_lenguas">MCER</a>) <br/>
-							<i class="fa fa-circle"></i>
-							<i class="fa fa-circle-thin"></i>
-							<i class="fa fa-circle-thin"></i>
-							<i class="fa fa-circle-thin"></i>
-							<i class="fa fa-circle-thin"></i>
-							<i class="fa fa-circle-thin"></i>
-						</td>
-					</tr>
-				</table>
-				<div class="separator"></div>
-			</dd>
-
-			<dd class="clear"></dd>
-
-			<dt>Habilidades</dt>
-			<dd>
-				Experiencia con: <br/>
-				<a class="tag" href="https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)"><b>Java</b></a>
-				<a class="tag" href="https://en.wikipedia.org/wiki/Vaadin"><b>Vaadin</b></a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/Eclipse_(software)"><b>Eclipse</b></a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/Git"><b>GIT</b></a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/MySQL"><b>MySQL</b></a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/Scrum"><b>Scrum</b></a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/Java_EE">Java EE</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/HTML5">HTML5</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada">CSS</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/Tomcat">Apache Tomcat</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/JasperReports">Jasper Report</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/Microsoft_SQL_Server">Microsoft SQL Server</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/NetBeans">NetBeans</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/GitHub">GitHub</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/Bitbucket">BitBucket</a>
-				<a class="tag" href="https://en.wikipedia.org/wiki/Teamwork.com">Teamwork</a>
-
-				<div class="separator"></div>
-
-				Conocimientos básicos de: <br/>
-				<a class="tag" href="https://es.wikipedia.org/wiki/JavaFX">JavaFX</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/Hibernate">Hibernate</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/JUnit">JUnit</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/JavaScript">JavaScript</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/MongoDB">MongoDB</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/Hadoop">Hadoop</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/Apache_Hive">Apache Hive</a>
-				<a class="tag" href="https://en.wikipedia.org/wiki/Apache_Spark">Apache Spark</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/JavaServer_Pages">JSP</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/JavaServer_Faces">JSF</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/PrimeFaces">PrimeFaces</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/MATLAB">Matlab</a>
-				<a class="tag" href="https://es.wikipedia.org/wiki/Desarrollo_en_cascada">Desarrollo en cascada</a>
-			</dd>
-
-			<div class="normal">
-				<dd class="clear"></dd>
-
-				<dt>¿Alguna pregunta?</dt>
-				<dd>
-					<a href="mailto:cjpelaezrivas@gmail.com?subject=Solicitar más información" target="_self">Solicitar más información</a>
-				</dd>
-
-				<dd class="clear"></dd>
+				</div>
 			</div>
-		</dl>
+			<div class="item">
+				<h2>Formación académica</h2>
+				<div class="detail">
+					<h3>Máster en Ingeniería Informática <span class="mobile_view"><br></span> <span class="note date_information">2015 - Actualmente</span></h3>
+					Escuela Técnica Superior de Ingeniería Informática. <br/>
+					Universidad de Málaga, España.
+					<div class="separator"></div>
+					<h3>Grado en Ingeniería Informática <span class="mobile_view"><br></span> <span class="note date_information">2010 - 2015</span></h3>
+					Escuela Técnica Superior de Ingeniería Informática. <br/>
+					Universidad de Málaga, España.
+					<div class="separator"></div>
+					<h3>Formación complementaria</h3>
+					<ul class="custom_list">
+						<li>Herramientas de informática forense y tests de penetración (Online)<span class="note" style="margin-left:20px;">2017</span></li>
+						<li>Informática forense y peritajes informáticos (25 horas)<span class="note" style="margin-left:20px;">2013</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="item">
+				<h2>Proyectos personales</h2>
+				<div class="detail">
+					<h3><a class="link_print" href="http://www.prlazarus.tk/">prlazarus.tk</a> <span class="mobile_view"><br></span> <span class="note date_information">En activo desde 2012</span></h3>
+					<i>Blog personal sobre desarrollo de proyectos Software y tutoriales.</i>
+					<div class="separator"></div>
+					<h3><a class="link_print" href="http://www.projectcreationfx.tk">Project Creation FX</a> <span class="mobile_view"><br></span> <span class="note date_information">En desarrollo desde 2015</span></h3>
+					<i>Motor de desarrollo de juegos 2D en Java usando tecnología JavaFX.</i>
+				</div>
+			</div>
+			<div class="item">
+				<h2>Idiomas</h2>
+				<div class="detail">
+					<div id="language_a" class="part">
+						<b>Español</b> <br/>
+						Competencia nativa <br/>
+						<i class="fa fa-circle"></i>
+						<i class="fa fa-circle"></i>
+						<i class="fa fa-circle"></i>
+						<i class="fa fa-circle"></i>
+						<i class="fa fa-circle"></i>
+						<i class="fa fa-circle"></i>
+					</div>
+					<div id="language_b" class="part">
+						<b>Inglés</b> <br/>
+						Competencia media profesional <br/>
+						Nivel B2 (<a href="https://es.wikipedia.org/wiki/Marco_Com%C3%BAn_Europeo_de_Referencia_para_las_lenguas">MCER</a>) <br/>
+						<i class="fa fa-circle"></i>
+						<i class="fa fa-circle"></i>
+						<i class="fa fa-circle"></i>
+						<i class="fa fa-circle"></i>
+						<i class="fa fa-circle-thin"></i>
+						<i class="fa fa-circle-thin"></i>
+					</div>
+					<div id="language_c" class="part">
+						<b>Alemán</b> <br/>
+						Competencia básica <br/>
+						Nivel A1 (<a href="https://es.wikipedia.org/wiki/Marco_Com%C3%BAn_Europeo_de_Referencia_para_las_lenguas">MCER</a>) <br/>
+						<i class="fa fa-circle"></i>
+						<i class="fa fa-circle-thin"></i>
+						<i class="fa fa-circle-thin"></i>
+						<i class="fa fa-circle-thin"></i>
+						<i class="fa fa-circle-thin"></i>
+						<i class="fa fa-circle-thin"></i>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<h2>Habilidades</h2>
+				<div class="detail">
+					Experiencia con: <br/>
+					<a class="tag" href="https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)"><b>Java</b></a>
+					<a class="tag" href="https://en.wikipedia.org/wiki/Vaadin"><b>Vaadin</b></a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/Eclipse_(software)"><b>Eclipse</b></a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/Git"><b>GIT</b></a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/MySQL"><b>MySQL</b></a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/Scrum"><b>Scrum</b></a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/Java_EE">Java EE</a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/HTML5">HTML5</a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada">CSS</a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/Tomcat">Apache Tomcat</a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/JasperReports">Jasper Report</a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/Microsoft_SQL_Server">Microsoft SQL Server</a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/NetBeans">NetBeans</a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/GitHub">GitHub</a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/Bitbucket">BitBucket</a>
+					<a class="tag" href="https://en.wikipedia.org/wiki/Teamwork.com">Teamwork</a>
 
-		<div class="clear"></div>
+					<div class="separator"></div>
 
-		<br/>
-		<div class="objective">
-			<p>
-				<i class="fa fa-clock-o"></i> Última actualización: Enero de 2018
-			</p>
+					Conocimientos básicos de: <br/>
+					<a class="tag" href="https://es.wikipedia.org/wiki/JavaFX">JavaFX</a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/Hibernate">Hibernate</a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/JUnit">JUnit</a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/JavaScript">JavaScript</a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/MongoDB">MongoDB</a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/Hadoop">Hadoop</a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/Apache_Hive">Apache Hive</a>
+					<a class="tag" href="https://en.wikipedia.org/wiki/Apache_Spark">Apache Spark</a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/JavaServer_Pages">JSP</a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/JavaServer_Faces">JSF</a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/PrimeFaces">PrimeFaces</a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/MATLAB">Matlab</a>
+					<a class="tag" href="https://es.wikipedia.org/wiki/Desarrollo_en_cascada">Desarrollo en cascada</a>
+				</div>
+			</div>
+			<div class="item no_print">
+				<h2>¿Alguna pregunta?</h2>
+				<div class="detail">
+					<a href="mailto:cjpelaezrivas@gmail.com?subject=Solicitar más información" target="_self">Solicitar más información</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="meta" class="section note">
+			<i class="fa fa-clock-o"></i> Última actualización: Abril de 2018
 		</div>
 	</div>
 </body>

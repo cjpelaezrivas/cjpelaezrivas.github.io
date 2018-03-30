@@ -2,24 +2,30 @@ html {
 	background-image: none;
 }
 
-#page-wrap  {
-	padding: 0;
-}
-
 a, a:visited {
 	color: #222222;
 	text-decoration: none;
 	border-bottom: none;
 }
 
-.normal {
-	display: none;
-	visibility: hidden;
+#page-wrap  {
+	padding: 0;
+	margin: 0;
+	width: 1500px; /*Used to print all in the same page*/
 }
 
-.print {
+#meta {
+	margin-top: -120px;
+}
+
+.only_print {
 	display: inline;
 	visibility: visible;
+}
+
+.no_print, hint--bottom-left:after, hint--bottom-right:after {
+	display: none;
+	visibility: hidden;
 }
 
 .links {
@@ -36,7 +42,7 @@ a, a:visited {
   content: " " attr(name) ": " attr(href);
 }
 
-.linkB:after {
+.link_print:after {
 	content: " (" attr(href) ")";
 
 	font-style: italic;
