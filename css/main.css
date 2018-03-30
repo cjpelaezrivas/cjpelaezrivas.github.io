@@ -35,9 +35,11 @@ ul.custom_list {
 	list-style: none;
 	padding: 0;
 }
+
 ul.custom_list li {
 	padding-left: 40px;
 }
+
 ul.custom_list li:before {
 	font-family: FontAwesome;
 	display: inline-block;
@@ -215,7 +217,7 @@ ul.custom_list li:before {
 
 @media screen and (max-width: 800px) {
 	#details .item {
-		margin-bottom: 30px;
+		margin-bottom: 15px;
 	}
 
 	#details .item h2 {
@@ -233,7 +235,6 @@ ul.custom_list li:before {
 
 		padding-top: 15px;
 		padding-left: 0;
-		padding-bottom: 0;
 
 		border-top: solid 1px #999999;
 		border-left: none;
