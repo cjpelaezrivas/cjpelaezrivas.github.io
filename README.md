@@ -1,4 +1,4 @@
 cjpelaezrivas.github.io
 =======================
 
-Visit [cjpelaezrivas.github.io/](https://cjpelaezrivas.github.io/) to see this repository in action.
+Visit [cjpelaezrivas.github.io](http://cjpelaezrivas.tk) to see this repository in action.
