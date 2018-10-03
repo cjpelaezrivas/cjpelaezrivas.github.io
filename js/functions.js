@@ -1,6 +1,9 @@
 document.onselectstart = function() {return false;}
 document.onmousedown = function() {return false;}
 
+var months_es = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+var months_en = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
 function calculateTime(d1, d2, lang) {
     var d1S = d1.split('/');
     d1 = Date.UTC(d1S[1], d1S[0]-1, '01');
@@ -53,6 +56,23 @@ function calculateTime(d1, d2, lang) {
             result += 's';
         }
     }
+
+    return result;
+}
+
+function actualMonthYear(lang) {
+    var d = new Date();
+
+    var result = '';
+    if(lang == 'es') {
+        result += months_es[d.getUTCMonth()]
+        result += ' de '
+    } else if(lang == 'en'){
+        result += months_en[d.getUTCMonth()]
+        result += ' '
+    }
+
+    result += d.getUTCFullYear();
 
     return result;
 }

@@ -28,20 +28,6 @@ a, a:visited {
 	visibility: hidden;
 }
 
-.links {
-	display: inline;
-}
-
-.link {
-	color: #333333;
-	text-decoration: none;
-	border-bottom: none;
-}
-
-.link:after {
-  content: " " attr(name) ": " attr(href);
-}
-
 .link_print:after {
 	content: " (" attr(href) ")";
 
