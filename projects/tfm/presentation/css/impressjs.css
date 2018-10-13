@@ -1,0 +1,191 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    font-family:  Verdana, Arial;
+
+    min-height: 740px;
+
+    background: rgb(242, 242, 242);
+    -webkit-font-smoothing: antialiased;
+}
+
+a, a:visited {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	font-size: 60px;
+	font-weight: bold;
+
+	-webkit-transition: 1.0s;
+    -moz-transition:    1.0s;
+    -ms-transition:     1.0s;
+    -o-transition:      1.0s;
+    transition:         1.0s;
+}
+
+/* COMMON STEP STYLES */
+.step {
+    width: 900px;
+    padding: 40px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+}
+
+.step {
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+.step:not(.active) {
+    opacity: 0.0;
+}
+
+/*
+ * SLIDE STEP STYLES
+ */
+.slide {
+    display: block;
+
+    width: 1024px;
+    height: 768px;
+
+/*
+    padding: 10px 60px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+*/
+    text-align: justify;
+
+    /*border: 1px solid rgb(0, 0, 0);*/
+
+    color: #202020;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, .1);
+
+    font-size: 30px;
+}
+
+/* ENABLE CLICKING IN ELEMENTS 'HIDDING' BEHIND BODY IN 3D */
+body     { pointer-events: none; }
+#impress { pointer-events: auto; }
+nav 	 { pointer-events: auto; }
+
+/* IMPRESS NOT SUPPORTED STYLES */
+.fallback-message {
+    font-family: sans-serif;
+
+    display: none;
+    width: 780px;
+    padding: 10px 10px;
+    margin: 20px auto;
+
+    border: 2px solid #E4C652;
+    background: #EEDC94;
+}
+
+.fallback-message p {
+    margin-bottom: 10px;
+}
+
+.impress-disabled .step,
+.impress-not-supported .step {
+    position: relative;
+    opacity: 1;
+    margin: 20px auto;
+}
+
+.impress-not-supported .fallback-message {
+    display: block;
+}
+
+/* VENTANA DE CONSEJOS */
+.hint {
+    display: none;
+
+    position: fixed;
+    right: 0;
+    bottom: 200px;
+
+    width: 350px;
+
+    background: rgba(0,0,0,0.5);
+    color: #FFFFFF;
+    text-align: right;
+
+    font-size: 20px;
+    padding: 20px;
+
+    z-index: 1000;
+
+    opacity: 0;
+
+    -webkit-transform: translateX(300px);
+    -moz-transform:    translateX(300px);
+    -ms-transform:     translateX(300px);
+    -o-transform:      translateX(300px);
+    transform:         translateX(300px);
+
+    -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
+    -moz-transition:    opacity 1s,    -moz-transform 0.5s 1s;
+    -ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
+    -o-transition:      opacity 1s,      -o-transform 0.5s 1s;
+    transition:         opacity 1s,         transform 0.5s 1s;
+}
+
+.impress-enabled .hint {
+	display: block
+}
+
+.impress-on-title .hint {
+    opacity: 1;
+
+    -webkit-transform: translateX(0px);
+    -moz-transform:    translateX(0px);
+    -ms-transform:     translateX(0px);
+    -o-transform:      translateX(0px);
+    transform:         translateX(0px);
+
+    -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
+    -moz-transition:    opacity 1s 5s,    -moz-transform 0.5s 4.5s;
+    -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s 4.5s;
+    -o-transition:      opacity 1s 5s,      -o-transform 0.5s 4.5s;
+    transition:         opacity 1s 5s,         transform 0.5s 4.5s;
+}
+
+#overview {
+  z-index: -1;
+  padding: 0;
+}
+
+.impress-on-overview .step{
+  opacity: 1;
+  cursor: pointer;
+}

@@ -1,0 +1,112 @@
+/* ESTILOS PERSONALIZADOS */
+
+ul {
+	padding-left: 50px;
+}
+
+li {
+	padding: 5px 0;
+	list-style-type: square;
+}
+
+li.sub {
+	list-style-type: circle;
+}
+
+nav a {
+	display: block;
+	margin: 5px;
+	padding: 5px;
+
+	opacity: 0.5;
+	position: fixed;
+
+	width: 20px;
+	height: 20px;
+
+	font-size: 20px;
+	color: inherit;
+	text-decoration: none;
+	text-shadow: none;
+
+	text-align: center;
+	line-height: 20px;
+
+	-webkit-transition: 1.0s;
+	-moz-transition:    1.0s;
+	-ms-transition:     1.0s;
+	-o-transition:      1.0s;
+	transition:         1.0s;
+}
+
+nav a:hover {
+	opacity: 1;
+}
+
+nav a.home {
+	left: 0;
+	top: 0;
+	z-index: 999;
+}
+
+nav a.overview {
+	left: 30px;
+	top: 0;
+	z-index: 999;
+}
+
+/* ESTILOS TEXTOS */
+
+h1 {
+	margin-bottom: 0.75em;
+	font-size: 40px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 38px;
+	padding-bottom: 30px;
+}
+
+.nota {
+	font-size: 20px;
+}
+
+.centred {
+	position: fixed;
+	width: 100%;
+	top: 40%;
+	text-align: center;
+	margin-left: -40px;
+}
+
+.tab {
+	padding-left: 50px;
+}
+
+/* IDs PERSONALIZADOS */
+
+.impress-on-d1b #d1a,
+.impress-on-d2b #d2a,
+.impress-on-d3b #d3a,
+.impress-on-d4b #d4a,
+.impress-on-d5b #d5a {
+	opacity: 1;
+}
+
+.impress-on-thanks .step {
+	opacity: 0.2;
+}
+
+.impress-on-thanks #thanks {
+	opacity: 1;
+}
+
+
+#tomcat_logo {
+	position: fixed;
+	top: 275px;
+	right: 300px;
+
+	width: 200px;
+}
