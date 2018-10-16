@@ -60,7 +60,7 @@ function calculateTime(d1, d2, lang) {
     return result;
 }
 
-function actualMonthYear(lang) {
+function currentMonthYear(lang) {
     var d = new Date();
 
     var result = '';
