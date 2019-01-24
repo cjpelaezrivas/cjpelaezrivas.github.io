@@ -4,7 +4,7 @@ document.onmousedown = function() {return false;}
 var months_es = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
 var months_en = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-function calculateTime(d1, d2, lang) {
+function calculateTime(d1, d2, lang, options='ym') {
     var d1S = d1.split('/');
     d1 = Date.UTC(d1S[1], d1S[0]-1, '01');
 
@@ -16,44 +16,49 @@ function calculateTime(d1, d2, lang) {
     }
 
     var dif = d2 - d1;
-    dif /= 1000 * 60 * 60 * 24 * 365;
+    dif /= 1000 * 60 * 60 * 24 * 365; //years
 
     var years = Math.floor(dif);
-    var months =  Math.floor((dif - years) * 12);
 
     var result = '';
-    if(years > 0) {
-        if(lang == 'es') {
-            result += years + ' año';
-        } else if(lang == 'en'){
-            result += years + ' year';
-        }
-    }
 
-    if(years > 1) {
-        result += 's';
-    }
-
-    if(months > 0) {
+    if(options === 'y' || options === 'ym') {
         if(years > 0) {
             if(lang == 'es') {
-                result += ' y ';
+                result += years + ' año';
             } else if(lang == 'en'){
-                result += ' and ';
+                result += years + ' year';
             }
         }
-        if(lang == 'es') {
-            result += months + ' mes';
-        } else if(lang == 'en'){
-            result += months + ' month';
+
+        if(years > 1) {
+            result += 's';
         }
     }
 
-    if(months > 1) {
-        if(lang == 'es') {
-            result += 'es';
-        } else if(lang == 'en'){
-            result += 's';
+    if(options === 'ym') {
+        var months =  Math.floor((dif - years) * 12);
+        if(months > 0) {
+            if(years > 0) {
+                if(lang == 'es') {
+                    result += ' y ';
+                } else if(lang == 'en'){
+                    result += ' and ';
+                }
+            }
+            if(lang == 'es') {
+                result += months + ' mes';
+            } else if(lang == 'en'){
+                result += months + ' month';
+            }
+        }
+
+        if(months > 1) {
+            if(lang == 'es') {
+                result += 'es';
+            } else if(lang == 'en'){
+                result += 's';
+            }
         }
     }
 
