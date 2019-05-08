@@ -57,7 +57,8 @@ ul.custom_list li {
 }
 
 ul.custom_list li:before {
-	font-family: FontAwesome;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	display: inline-block;
 	margin-left: -1.3em;
 	width: 1.3em;
