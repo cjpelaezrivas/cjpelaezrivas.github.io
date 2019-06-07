@@ -127,6 +127,7 @@ ul.custom_list li:before {
 
 .only_print {
 	display: none;
+	visibility: hidden;
 }
 
 .section {
@@ -184,7 +185,7 @@ ul.custom_list li:before {
 }
 
 #details .item {
-	display: block;
+	display: inline-flex;
 	width: 100%;
 
 	overflow: hidden;
@@ -193,23 +194,20 @@ ul.custom_list li:before {
 }
 
 #details .item h2 {
-	vertical-align: top;
-	display: table-cell;
-	min-width: 200px;
-
 	padding-right: 20px;
+
+	min-width: 200px;
 
 	font-size: 18px;
 	font-style: italic;
 	font-weight: bold;
 	text-align: right;
+	vertical-align: top;
 }
 
 #details .item .detail {
-	display: table-cell;
-
 	width: 100%;
-	height: 75px;
+	min-height: 75px;
 
 	padding-left: 20px;
 	padding-bottom: 20px;
@@ -234,6 +232,7 @@ ul.custom_list li:before {
 
 @media screen and (max-width: 800px) {
 	#details .item {
+		display: block;
 		margin-bottom: 15px;
 	}
 
