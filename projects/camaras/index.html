@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+	<title>Cámaras Málaga</title>
+
+	<meta charset="UTF-8" />
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico"/>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap-5.0.0 beta/css/bootstrap.min.css"/>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
+
+	<script src="lib/bootstrap-5.0.0 beta/js/bootstrap.bundle.min.js"></script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+	<a href="http://callejero.malaga.eu/?gplayers=camara-trafico&gp=o">Ver mapa de todas las cámaras</a>
+
+	<div class="container-md">
+		<div class="row row-cols-1 row-cols-sm-2">
+			<div class="camera col">
+				<h3>Plaza Manuel Azaña</h3>
+				<img id="c09" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-09.jpg">
+			</div>
+			<div class="camera col">
+				<h3>Avda. Ortega y Gasset - Alcalde Díaz Zafra</h3>
+				<img id="c45" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-45.jpg">
+			</div>
+			<div class="camera col">
+				<h3>Avda. Juan XXIII – Avda. Ortega y Gasset</h3>
+				<img id="c35" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-35.jpg">
+			</div>
+			<div class="camera col">
+				<h3>Avda. Ortega y Gasset – C/ Juan Gris</h3>
+				<img id="c1058" src="https://ctraficomovilidad.malaga.eu/cst_ctrafico/camara1058.jpg">
+			</div>
+
+			<div class="camera col">
+				<h3>Avda. Jose Ortega y Gasset – Avda. Mª Zambrano</h3>
+				<img id="c1064" src="https://ctraficomovilidad.malaga.eu/cst_ctrafico/camara1064.jpg">
+			</div>
+
+			<div class="camera col-m">
+				<h3>Avda. de Andalucia - C/ Alcalde Tomás Domínguez</h3>
+				<img id="c65" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-65.jpg">
+			</div>
+
+			<div class="camera col-m">
+				<h3>Cmno. de San Rafael - C/ Ceramistas</h3>
+				<img id="c66" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-66.jpg">
+			</div>
+
+			<div class="camera col-m">
+				<h3>Avda. José Ortega y Gasset - Palacio de Ferias</h3>
+				<img id="c1067" src="https://ctraficomovilidad.malaga.eu/cst_ctrafico/camara1067.jpg">
+			</div>
+
+			<div class="camera col-m">
+				<h3>Avda. José Ortega y Gasset - C/ Paris</h3>
+				<img id="c1068" src="https://ctraficomovilidad.malaga.eu/cst_ctrafico/camara1068.jpg">
+			</div>
+
+			<div class="camera col-m">
+				<h3>Avda. José Ortega y Gasset - Avda. los Vegas</h3>
+				<img id="c1069" src="https://ctraficomovilidad.malaga.eu/cst_ctrafico/camara1069.jpg">
+			</div>
+
+			<div class="camera col-m">
+				<h3>Avda. de la Aurora - C/ Escultor Palma Burgos</h3>
+				<img id="c1074" src="https://ctraficomovilidad.malaga.eu/cst_ctrafico/camara1074.jpg">
+			</div>
+
+			<div class="camera col-m">
+				<h3>Pso. de los Curas - Boquete del Muelle</h3>
+				<img id="c07" src="http://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-07.jpg">
+			</div>
+
+			<div class="camera col-m">
+				<h3>Avda Valle Inclán - Camino de Suárez</h3>
+				<img id="c23" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-23.jpg">
+			</div>
+
+			<div class="camera col-m">
+				<h3>Avda Juan XXIII – C/ Héroe Sostoa</h3>
+				<img id="c13" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-13.jpg">
+			</div>
+
+			<div class="camera col-m">
+				<h3>C/ Eduardo Toldrá</h3>
+				<img id="c84" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-84.jpg">
+			</div>
+
+			<div class="camera col-m">
+				<h3>C/ José Calderón - El Boni</h3>
+				<img id="c87" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-87.jpg">
+			</div>
+
+			<div class="camera col-m">
+				<h3>Rotonda Parque tecnológico</h3>
+				<img id="c82" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-82.jpg">
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+
+		var list = ['c07', 'c09', 'c13', 'c23', 'c35',
+					'c45', 'c65', 'c66', 'c82', 'c84',
+					'c87', 'c1058', 'c1064', 'c1067', 'c1068',
+					'c1069', 'c1074'];
+
+		async function update() {
+			while(true) {
+				Array.prototype.forEach.call(list, id => {
+					updateImage(id);
+				});
+
+				await sleep(5000);
+			}
+		}
+
+		update();
+	</script>
+</body>
+</html>
