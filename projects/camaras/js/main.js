@@ -6,6 +6,10 @@ function updateImage(idImage) {
 		return;
 	}
 
+	if(!checkIsVisibleInScreen(img)) {
+		return;
+	}
+
 	var src = img.src;
 	var index = src.indexOf("?");
 
@@ -16,10 +20,16 @@ function updateImage(idImage) {
 	var time = new Date().getTime();
 
 	img.src = src + "?t=" + time;
+}
 
-	console.log(img.src)
+function checkIsVisibleInScreen(img) {
+
+	var rect = img.getBoundingClientRect();
+	var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+
+	return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
 }
 
 function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+	return new Promise(resolve => setTimeout(resolve, ms));
 }
