@@ -4,6 +4,9 @@ document.onmousedown = function() {return false;}
 var months_es = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
 var months_en = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
+const dayInMs = 1000 * 60 * 60 * 24;
+const yearInMs = 1000 * 60 * 60 * 24 * 365;
+
 function calculateTime(d1, d2, lang, options='ym') {
     var d1S = d1.split('/');
     d1 = Date.UTC(d1S[1], d1S[0]-1, '01');
@@ -12,11 +15,12 @@ function calculateTime(d1, d2, lang, options='ym') {
         d2 = new Date();
     } else {
         var d2S = d2.split('/');
-        d2 = Date.UTC(d2S[1], d2S[0]-1, '01');
+        d2 = Date.UTC(d2S[1], d2S[0], '01');
+        d2 -= dayInMs;
     }
 
     var dif = d2 - d1;
-    dif /= 1000 * 60 * 60 * 24 * 365; //years
+    dif /= yearInMs; //years
 
     var years = Math.floor(dif);
 
