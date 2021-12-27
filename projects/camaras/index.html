@@ -27,21 +27,25 @@
 
 	<div class="container-md">
 		<div class="row row-cols-1 row-cols-sm-2">
+
 			<div class="camera col">
 				<h3>Plaza Manuel Azaña</h3>
 				<img id="9" class="image" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-09.jpg">
 			</div>
+
 			<div class="camera col">
 				<h3>Avda. Ortega y Gasset - Alcalde Díaz Zafra</h3>
 				<img id="45" class="image" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-45.jpg">
 			</div>
-			<div class="camera col">
-				<h3>Avda. Juan XXIII – Avda. Ortega y Gasset</h3>
-				<img id="35" class="image" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-35.jpg">
-			</div>
+
 			<div class="camera col">
 				<h3>Avda. Ortega y Gasset – C/ Juan Gris</h3>
 				<img id="1058" class="image" src="https://ctraficomovilidad.malaga.eu/cst_ctrafico/camara1058.jpg">
+			</div>
+
+			<div class="camera col">
+				<h3>Avda. José Ortega y Gasset - Palacio de Ferias</h3>
+				<img id="1067" class="image" src="https://ctraficomovilidad.malaga.eu/cst_ctrafico/camara1067.jpg">
 			</div>
 
 			<div class="camera col">
@@ -50,18 +54,8 @@
 			</div>
 
 			<div class="camera col">
-				<h3>Avda. de Andalucia - C/ Alcalde Tomás Domínguez</h3>
-				<img id="65" class="image" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-65.jpg">
-			</div>
-
-			<div class="camera col">
 				<h3>Cmno. de San Rafael - C/ Ceramistas</h3>
 				<img id="66" class="image" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-66.jpg">
-			</div>
-
-			<div class="camera col">
-				<h3>Avda. José Ortega y Gasset - Palacio de Ferias</h3>
-				<img id="1067" class="image" src="https://ctraficomovilidad.malaga.eu/cst_ctrafico/camara1067.jpg">
 			</div>
 
 			<div class="camera col">
@@ -75,6 +69,31 @@
 			</div>
 
 			<div class="camera col">
+				<h3>Avda. Juan XXIII – Avda. Ortega y Gasset</h3>
+				<img id="35" class="image" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-35.jpg">
+			</div>
+
+			<div class="camera col">
+				<h3>Avda Juan XXIII – C/ Héroe Sostoa</h3>
+				<img id="13" class="image" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-13.jpg">
+			</div>
+
+			<div class="camera col">
+				<h3>Rotonda Parque tecnológico</h3>
+				<img id="82" class="image" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-82.jpg">
+			</div>
+
+			<div class="camera col">
+				<h3>C/ José Calderón - El Boni</h3>
+				<img id="87" class="image" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-87.jpg">
+			</div>
+
+			<div class="camera col">
+				<h3>Avda. de Andalucia - C/ Alcalde Tomás Domínguez</h3>
+				<img id="65" class="image" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-65.jpg">
+			</div>
+
+			<div class="camera col">
 				<h3>Avda. de la Aurora - C/ Escultor Palma Burgos</h3>
 				<img id="1074" class="image" src="https://ctraficomovilidad.malaga.eu/cst_ctrafico/camara1074.jpg">
 			</div>
@@ -85,35 +104,19 @@
 			</div>
 
 			<div class="camera col">
-				<h3>Avda Valle Inclán - Camino de Suárez</h3>
-				<img id="23" class="image" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-23.jpg">
-			</div>
-
-			<div class="camera col">
-				<h3>Avda Juan XXIII – C/ Héroe Sostoa</h3>
-				<img id="13" class="image" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-13.jpg">
-			</div>
-
-			<div class="camera col">
 				<h3>C/ Eduardo Toldrá</h3>
 				<img id="84" class="image" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-84.jpg">
 			</div>
 
 			<div class="camera col">
-				<h3>C/ José Calderón - El Boni</h3>
-				<img id="87" class="image" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-87.jpg">
-			</div>
-
-			<div class="camera col">
-				<h3>Rotonda Parque tecnológico</h3>
-				<img id="82" class="image" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-82.jpg">
+				<h3>Avda Valle Inclán - Camino de Suárez</h3>
+				<img id="23" class="image" src="https://www.malaga.eu/recursos/movilidad/camaras_trafico/TV-23.jpg">
 			</div>
 		</div>
 	</div>
 
 
 	<script type="text/javascript">
-
 		const list = document.getElementsByClassName("image");
 
 		async function update() {
@@ -134,8 +137,14 @@
 				}
 
 				currentGroup = (currentGroup + 1 ) % 10;
-				await sleep(500);
+				await sleep(1000);
 			}
+		}
+
+		function processAjaxData(response, urlPath) {
+			document.getElementById("content").innerHTML = response.html;
+			document.title = response.pageTitle;
+			window.history.pushState({"html":response.html,"pageTitle":response.pageTitle},"", urlPath);
 		}
 
 		update();

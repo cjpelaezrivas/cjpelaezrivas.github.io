@@ -19,7 +19,7 @@ function updateImage(idImage) {
 
 	var time = new Date().getTime();
 
-	img.src = src + "?t=" + time;
+	img.src = src + "?dummy=" + time;
 }
 
 function checkIsVisibleInScreen(img) {
