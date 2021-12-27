@@ -16,11 +16,11 @@ function calculateTime(d1, d2, lang, options='ym') {
     } else {
         var d2S = d2.split('/');
         d2 = Date.UTC(d2S[1], d2S[0], '01');
-        d2 -= dayInMs;
+        d2 -= dayInMs; // last day of month
     }
 
     var dif = d2 - d1;
-    dif /= yearInMs; //years
+    dif /= yearInMs; // years
 
     var years = Math.floor(dif);
 
