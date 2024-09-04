@@ -103,6 +103,11 @@ ul.custom_list li:before {
 	margin-left: 20px;
 }
 
+.project_information {
+	border: none !important;
+	opacity: 60%;
+}
+
 .separator {
 	width: 100%;
 	height: 15px;
