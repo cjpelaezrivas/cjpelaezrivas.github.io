@@ -1,7 +1,7 @@
 document.onselectstart = function() {return false;}
 document.onmousedown = function() {return false;}
 
-const traductions = new Map()
+const translations = new Map()
 .set('es', {
     year: ' año',
     time_separator: ' y ',
@@ -22,7 +22,7 @@ const traductions = new Map()
 function calculateTime(myStart, myEnd, lang, options='ym') {
     let start = monthYearToDate(myStart);
     let end = !!myEnd ? monthYearToDate(myEnd) : new Date();
-    
+
     let diff = new Date(end - start);
     let years = Math.abs(diff.getUTCFullYear() - 1970);
     let months = diff.getUTCMonth();
@@ -30,7 +30,7 @@ function calculateTime(myStart, myEnd, lang, options='ym') {
     let result = '';
     if(options.includes('y')) {
         if(years > 0) {
-            result += years + traductions.get(lang).year;
+            result += years + translations.get(lang).year;
         }
 
         if(years > 1) {
@@ -41,19 +41,17 @@ function calculateTime(myStart, myEnd, lang, options='ym') {
     if(options.includes('m')) {
         if(months > 0) {
             if(years > 0) {
-                result += traductions.get(lang).time_separator;
+                result += translations.get(lang).time_separator;
             }
 
-            result += months + traductions.get(lang).month;
+            result += months + translations.get(lang).month;
         }
 
         if(months > 1) {
-            result += traductions.get(lang).month_plural;
+            result += translations.get(lang).month_plural;
         }
-    } else {
-        if(months >= 1) {
-            result = '+' + result;
-        }
+    } else if(years >= 1 && months >= 1) {
+        result = '+' + result;
     }
 
     return result;
@@ -67,8 +65,8 @@ function monthYearToDate(monthYeah) {
 function currentMonthYear(lang) {
     let date = new Date();
 
-    let result = traductions.get(lang).months[date.getUTCMonth()];
-    result += traductions.get(lang).separator;
+    let result = translations.get(lang).months[date.getUTCMonth()];
+    result += translations.get(lang).separator;
     result += date.getUTCFullYear();
 
     return result;
